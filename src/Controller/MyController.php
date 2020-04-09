@@ -6,9 +6,15 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-
 class MyController extends AbstractController
 {
+    /**
+     * @Route("/", name="index")
+     */
+    public function index(): Response
+    {
+        return $this->render('index.html.twig', []);
+    }
     public function number()
     {
         $number = mt_rand(0, 100);
@@ -17,44 +23,24 @@ class MyController extends AbstractController
             'Tirage aléatoire: '.$number.''
         );
     }
-    /**
+     /**
      * @Route("/hello", name="route1")
      */
-    public function nouveauController()
+    public function Hello()
     {
-
-
+    
         return new Response(
-            'HELLO WORLD'
+            'Hello world'
         );
     }
     /**
-     * @Route("/affiche/{nombre}", name="route1")
+     * @Route("/add/{x}/{y}", name="route2",  requirements={"x"="\d+"}),  requirements={"y"="\d+"}))
      */
-    public function parmametreEnSymfony($nombre)
+    public function add($x, $y)
     {
-
-
+        $res = $x+$y;
         return new Response(
-            'nombre saisi:'.$nombre.''
+            'la somme de '.$x.' + '.$y.' vaut '.$res.''
         );
     }
-    /**
-     * @Route("/addition/{nombre1}/{nombre2}", name="route1",requirements={"nombre2"="\d+"},requirements={"nombre1"="\d+"})
-     */
-    public function addition($nombre1, $nombre2)
-    {
-
-        $total = $nombre1+$nombre2;
-        return new Response(
-            'Somme:'.$total.''
-        );
-    }
-    /**
-     * @Route("/", name="index")
-     */
-    public function index(): Response
-    {
-        return $this->render('index.html.twig', []);
-    }
-}
+} 

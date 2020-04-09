@@ -2,5 +2,5 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 aleatoire:
-  path: /nombre/aleatoire
-  controller: App\Controller\MyController::number
+        path: /nombre/aleatoire
+        controller: App\Controller\MyController::number
