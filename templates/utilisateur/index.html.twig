@@ -2,44 +2,50 @@
 
 {% block title %}Utilisateur index{% endblock %}
 {% block stylesheets %}
-<link href="{{ asset('css/dataTables.min.css') }}" rel="stylesheet"/>
+
+
 {% endblock %}
 {% block body %}
-    <h1>Utilisateur index</h1>
 
-    <table class="table display" id="myTable"> 
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Email</th>
-                <th>Pseudo</th>
-                <th>Role</th>
-                <th>Password</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for utilisateur in utilisateurs %}
-            <tr>
-                <td>{{ utilisateur.id }}</td>
-                <td>{{ utilisateur.email }}</td> 
-                <td>{{ utilisateur.pseudo }}</td>
-                <td>{{ utilisateur.role }}</td>
-                <td>{{ utilisateur.password }}</td>
-                <td>
-                    <a href="{{ path('utilisateur_show', {'id': utilisateur.id}) }}">show</a>
-                    <a href="{{ path('utilisateur_edit', {'id': utilisateur.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="5">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Utilisateur</h1>
+            <table class="table display" id="myTable">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Email</th>
+                    <th>Pseudo</th>
+                    <th>Role</th>
+                    <th>Password</th>
+                    <th>actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for utilisateur in utilisateurs %}
+                    <tr>
+                        <td>{{ utilisateur.id }}</td>
+                        <td>{{ utilisateur.email }}</td>
+                        <td>{{ utilisateur.pseudo }}</td>
+                        <td>{{ utilisateur.role }}</td>
+                        <td>{{ utilisateur.password }}</td>
+                        <td>
+                            <a  href="{{ path('utilisateur_show', {'id': utilisateur.id}) }}">show</a>
+                            <a  href="{{ path('utilisateur_edit', {'id': utilisateur.id}) }}">edit</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="5">no records found</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
 
-    <a href="{{ path('utilisateur_new') }}">Nouveau</a>
+            <a class="btn btn-primary" href="{{ path('utilisateur_new') }}">Nouveau</a>
+        </div>
+    </div>
+
 {% endblock %}
 {% block javascripts %}
 

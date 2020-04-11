@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cd5af3d-4c8e-41c4-8ad7-e1aabf14d32c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200410002109.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200410002609.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200410135338.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200410135443.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/profile.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e5f944-ba5a-4de2-a4b7-c56cd9af8eee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28e5f944-ba5a-4de2-a4b7-c56cd9af8eee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/utilisateur/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/utilisateur/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/utilisateur/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/utilisateur/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/utilisateur/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +57,20 @@
         <item name="data" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="migration_versions: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="sqlite_master: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -213,7 +243,7 @@
       <workItem from="1585758670913" duration="5294000" />
       <workItem from="1586268646407" duration="14198000" />
       <workItem from="1586429553946" duration="5744000" />
-      <workItem from="1586440517798" duration="16857000" />
+      <workItem from="1586440517798" duration="26261000" />
     </task>
     <task id="LOCAL-00001" summary="finalisation du tp">
       <created>1586465538597</created>
@@ -270,6 +300,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1586443097268" />
+    <state x="556" y="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586526801206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="556" y="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1586526801206" />
     <state x="646" y="303" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1586444140269">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -278,9 +312,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586440520190" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1586444241779">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1586608913446">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586444241779" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586608913446" />
   </component>
 </project>

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="container">
+    <div class="jumbotron">
+        {% if app.user %}
+            <div class="mb-3">
+                Bienvenue  {{ app.user.username }}*
+                <li class="nav-item">
+                    <a href="{{ path('app_logout') }}">Logout</a>
+                </li>
+            </div>
+
+        {% endif %}
+
+    </div>
+</div>
+{% endblock %}

@@ -1,13 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Utilisateur{% endblock %}
 
-{% block body %}
-    <h1>Edit Utilisateur</h1>
+        {% block title %}Edit Utilisateur{% endblock %}
 
-    {{ include('utilisateur/_form.html.twig', {'button_label': 'Modifier'}) }}
+        {% block body %}
+            <div class="container">
+                <div class="jumbotron">
+                        <h1>Edit Utilisateur</h1>
 
-    <a href="{{ path('utilisateur_index') }}">Retour to list</a>
+                        {{ include('utilisateur/_form.html.twig', {'button_label': 'Modifier'}) }}
 
-    {{ include('utilisateur/_delete_form.html.twig') }}
-{% endblock %}
+                        <a class="btn btn-primary" href="{{ path('utilisateur_index') }}">Retour to list</a>
+
+                        {{ include('utilisateur/_delete_form.html.twig') }}
+                </div>
+            </div>
+        {% endblock %}
+
+
